@@ -1,7 +1,14 @@
+@use "/src/core/styles/global-variables" as *; // No namespace prefix
+
 .header {
   height: 95dvh;
   background-image:
-    linear-gradient(to right bottom, #7ed56fc1, #28b485c1),
+    linear-gradient(
+      to right bottom,
+      // Now reference it directly, without the namespace AND without interpolation:
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
     url("/images/hero.jpg");
   background-size: cover;
   background-position: top;
@@ -17,7 +24,6 @@
 
 .logo {
   height: 35px;
-  /* animation: moveInLeft 1s ease-out; */
 }
 
 .textBox {
@@ -29,7 +35,7 @@
 }
 
 .headingPrimary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 60px;

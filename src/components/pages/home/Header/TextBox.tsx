@@ -1,5 +1,5 @@
 import { CallToAction } from "../../../UI";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 
 export default function TextBox() {
   return (

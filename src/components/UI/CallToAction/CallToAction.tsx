@@ -1,4 +1,4 @@
-import styles from "./CallToAction.module.css";
+import styles from "./CallToAction.module.scss";
 
 interface IProps {
   text: string;

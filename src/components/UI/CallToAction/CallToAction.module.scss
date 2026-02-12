@@ -1,3 +1,5 @@
+@use "/src/core/styles/global-variables" as *; // No namespace prefix
+
 .callToAction:link,
 .callToAction:visited {
   text-transform: uppercase;
@@ -20,8 +22,8 @@
 }
 
 .callToActionWhite {
-  background-color: #fff;
-  color: #777;
+  background-color: $color-white;
+  color: $color-gray-dark;
 }
 
 .callToAction::after {
@@ -38,7 +40,7 @@
 }
 
 .callToActionWhite::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 .callToAction:hover::after {
