@@ -3,7 +3,7 @@ import styles from "./Header.module.scss";
 
 export default function TextBox() {
   return (
-    <div className={styles.textBox}>
+    <div className={styles.headerTextBox}>
       <h1 className={styles.headingPrimary}>
         <span className={styles.headingPrimaryMain}>Outdoors</span>
         <span className={styles.headingPrimarySub}>is where life happens</span>

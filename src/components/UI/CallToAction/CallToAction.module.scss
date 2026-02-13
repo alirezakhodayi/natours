@@ -1,56 +1,56 @@
 @use "/src/core/styles/global-variables" as *; // No namespace prefix
 
-.callToAction:link,
-.callToAction:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 15px 40px;
-  display: inline-block;
-  border-radius: 100px;
-  transition: all 0.2s;
-  position: relative;
-}
+.callToAction {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+  }
 
-.callToAction:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
 
-.callToAction:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+  }
 
-.callToActionWhite {
-  background-color: $color-white;
-  color: $color-gray-dark;
-}
+  &White {
+    background-color: $color-white;
+    color: $color-gray-dark;
+    &::after {
+      background-color: $color-white;
+    }
+  }
 
-.callToAction::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
 
-.callToActionWhite::after {
-  background-color: $color-white;
-}
-
-.callToAction:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.callToActionAnimated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
+  &Animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
 
 @keyframes moveInBottom {
