@@ -1,12 +1,13 @@
-@use "/src/core/styles/global-variables" as *; // No namespace prefix
+@use "/src/core/styles/abstracts/variables";
+@use "/src/core/styles/base/animations";
 
 .header {
   height: 95dvh;
   background-image:
     linear-gradient(
       to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.8)
+      rgba(variables.$color-primary-light, 0.7),
+      rgba(variables.$color-primary-dark, 0.7)
     ),
     url("/images/hero.jpg");
   background-size: cover;
@@ -30,60 +31,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-}
-
-.headingPrimary {
-  color: $color-white;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 60px;
-
-  &Main {
-    display: block;
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 35px;
-    animation: moveInLeft 1s ease-out;
-  }
-
-  &Sub {
-    display: block;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 17.4px;
-    animation: moveInRight 1s ease-out;
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  80% {
-    transform: translateX(10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  80% {
-    transform: translateX(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
   }
 }

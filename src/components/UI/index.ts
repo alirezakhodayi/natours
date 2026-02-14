@@ -1,3 +1,5 @@
 import { Button } from "./Button";
 import { CallToAction } from "./CallToAction";
-export { Button, CallToAction };
+import { PrimaryHeading, SecondaryHeading } from "./Heading";
+
+export { Button, CallToAction, PrimaryHeading, SecondaryHeading };

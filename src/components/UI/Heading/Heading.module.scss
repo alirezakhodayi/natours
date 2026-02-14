@@ -1,0 +1,46 @@
+@use "../../../core/styles/abstracts/variables";
+
+.headingPrimary {
+  color: variables.$color-white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 60px;
+
+  &Main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveInLeft 1s ease-out;
+  }
+
+  &Sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+.headingSecondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-decoration: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    variables.$color-primary-light,
+    variables.$color-primary-dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(variables.$color-black, 0.2);
+  }
+}

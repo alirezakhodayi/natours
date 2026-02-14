@@ -1,13 +1,10 @@
-import { CallToAction } from "../../../UI";
+import { CallToAction, PrimaryHeading } from "../../../UI";
 import styles from "./Header.module.scss";
 
 export default function TextBox() {
   return (
     <div className={styles.headerTextBox}>
-      <h1 className={styles.headingPrimary}>
-        <span className={styles.headingPrimaryMain}>Outdoors</span>
-        <span className={styles.headingPrimarySub}>is where life happens</span>
-      </h1>
+      <PrimaryHeading mainText="Outdoors" subText="is where life happens" />
       <CallToAction text="Discover our tours" animated />
     </div>
   );

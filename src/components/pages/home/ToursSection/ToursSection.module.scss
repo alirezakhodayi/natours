@@ -1,0 +1,10 @@
+@use "/src/core/styles/abstracts/variables";
+
+.reza {
+  color: variables.$color-primary-light;
+  font-size: 24px;
+  font-weight: 500;
+  width: full;
+  background-color: variables.$color-black;
+  border-radius: 20px 0 20px 0;
+}

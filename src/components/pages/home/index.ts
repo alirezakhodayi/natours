@@ -1,2 +1,4 @@
 import { Header } from "./Header";
-export { Header };
+import { AboutSection } from "./AboutSection";
+import { ToursSection } from "./ToursSection";
+export { Header, AboutSection, ToursSection };
