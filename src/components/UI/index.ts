@@ -1,5 +1,13 @@
-import { Button } from "./Button";
+import { LinkButton } from "./LinkButton";
 import { CallToAction } from "./CallToAction";
-import { PrimaryHeading, SecondaryHeading } from "./Heading";
+import { PrimaryHeading, SecondaryHeading, TertiaryHeading } from "./Heading";
+import { Paragraph } from "./Paragraph";
 
-export { Button, CallToAction, PrimaryHeading, SecondaryHeading };
+export {
+  LinkButton,
+  CallToAction,
+  PrimaryHeading,
+  SecondaryHeading,
+  TertiaryHeading,
+  Paragraph,
+};

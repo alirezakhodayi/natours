@@ -1,0 +1,8 @@
+@use "../../../core/styles/abstracts/variables";
+
+.paragraph {
+  font-size: variables.$default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

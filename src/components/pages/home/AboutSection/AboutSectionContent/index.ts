@@ -1,0 +1,1 @@
+export { AboutSectionContent } from "./AboutSectionContent";
