@@ -1,0 +1,29 @@
+@use "@/core/styles/abstracts/variables";
+
+.featuresBox {
+  background-color: rgba(variables.$color-white, 0.8);
+  font-size: 1.3rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, 0.15);
+  transition: transform 0.3s;
+
+  &Icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      variables.$color-primary-light,
+      variables.$color-primary-dark
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: inline-block;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

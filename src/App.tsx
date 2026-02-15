@@ -1,10 +1,16 @@
-import { AboutSection, Header, ToursSection } from "./components/pages/home";
+import {
+  AboutSection,
+  FeaturesSection,
+  Header,
+  ToursSection,
+} from "./components/pages/home";
 
 function App() {
   return (
     <>
       <Header />
       <AboutSection />
+      <FeaturesSection />
       <ToursSection />
       <section className="grid-test">
         <div className="row">

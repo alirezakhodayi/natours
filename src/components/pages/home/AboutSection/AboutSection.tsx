@@ -1,5 +1,6 @@
 import { SecondaryHeading } from "@/components/UI";
 import { AboutSectionContent } from "./AboutSectionContent";
+import { ImageComposition } from "./ImageComposition";
 import styles from "./AboutSection.module.scss";
 
 function AboutSection() {
@@ -12,7 +13,7 @@ function AboutSection() {
       </div>
       <div className="row">
         <AboutSectionContent />
-        <div className="col-1-of-2">Image Composition</div>
+        <ImageComposition />
       </div>
     </section>
   );
