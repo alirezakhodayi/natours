@@ -11,8 +11,9 @@
     url("/images/hero.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 75dvh, 0 100%);
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75dvh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75dvh, 0 100%);
 
   &LogoBox {
     position: absolute;
