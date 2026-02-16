@@ -7,6 +7,7 @@ export interface ITour {
   numberOfGuides: number;
   location: string;
   difficulty: string;
+  price: number;
   lightColor: string;
   darkColor: string;
 }

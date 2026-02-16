@@ -43,6 +43,8 @@
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
   }
 
   &Heading {
@@ -81,5 +83,30 @@
         }
       }
     }
+  }
+
+  &Cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &PriceBox {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: variables.$color-white;
+  }
+
+  &PriceOnly {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &PriceValue {
+    font-size: 6rem;
+    font-weight: 100;
   }
 }

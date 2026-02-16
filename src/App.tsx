@@ -12,7 +12,7 @@ function App() {
       <AboutSection />
       <FeaturesSection />
       <ToursSection />
-      <section className="grid-test">
+      {/* <section className="grid-test">
         <div className="row">
           <div className="col-1-of-3">Col 1 of 3</div>
           <div className="col-2-of-3">Col 2 of 3</div>
@@ -36,7 +36,7 @@ function App() {
           <div className="col-1-of-4">Col 2 of 3</div>
           <div className="col-3-of-4">Col 2 of 3</div>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

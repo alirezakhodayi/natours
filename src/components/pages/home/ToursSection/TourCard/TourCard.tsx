@@ -1,5 +1,6 @@
 import type { ITour } from "@/types";
 import styles from "./TourCard.module.scss";
+import { CallToAction } from "@/components/UI";
 
 interface IProps {
   tourData: ITour;
@@ -15,6 +16,7 @@ function TourCard({ tourData }: IProps) {
     numberOfGuides,
     location,
     difficulty,
+    price,
   } = tourData;
 
   return (
@@ -55,7 +57,13 @@ function TourCard({ tourData }: IProps) {
             backgroundImage: `linear-gradient(to right bottom, ${lightColor}, ${darkColor})`,
           }}
         >
-          Back
+          <div className={styles.tourCardCta}>
+            <div className={styles.tourCardPriceBox}>
+              <p className={styles.tourCardPriceOnly}>Only</p>
+              <p className={styles.tourCardPriceValue}>${price}</p>
+            </div>
+            <CallToAction text="Book now!" color="white" />
+          </div>
         </div>
       </div>
       ;

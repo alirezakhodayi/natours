@@ -28,6 +28,14 @@
     box-shadow: 0 5px 10px rgba(variables.$color-black, 0.2);
   }
 
+  &Primary {
+    background-color: variables.$color-primary;
+    color: variables.$color-gray-light-1;
+    &::after {
+      background-color: variables.$color-primary;
+    }
+  }
+
   &White {
     background-color: variables.$color-white;
     color: variables.$color-gray-dark;
