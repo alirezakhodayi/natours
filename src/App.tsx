@@ -2,6 +2,7 @@ import {
   AboutSection,
   FeaturesSection,
   Header,
+  StoriesSection,
   ToursSection,
 } from "./components/pages/home";
 
@@ -12,6 +13,7 @@ function App() {
       <AboutSection />
       <FeaturesSection />
       <ToursSection />
+      <StoriesSection />
       {/* <section className="grid-test">
         <div className="row">
           <div className="col-1-of-3">Col 1 of 3</div>

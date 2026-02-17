@@ -11,3 +11,11 @@ export interface ITour {
   lightColor: string;
   darkColor: string;
 }
+
+export interface IStory {
+  id: number;
+  personName: string;
+  avatar: string;
+  title: string;
+  story: string;
+}
