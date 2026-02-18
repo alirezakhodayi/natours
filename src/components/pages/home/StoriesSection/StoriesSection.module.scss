@@ -1,6 +1,6 @@
 @use "@/core/styles/abstracts/variables";
 
 .storiesSection {
+  position: relative;
   padding: 15rem 0;
-  background-color: variables.$color-gray-light-1;
 }
